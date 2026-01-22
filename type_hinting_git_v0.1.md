@@ -54,9 +54,9 @@ Note — Typing carries cognitive cost. The introduction of new types should be 
 The distinction between runtime classes and static type markers follows directly from these considerations. Python treats classes as runtime types because every instance carries a pointer to its class; this nominal tag determines method dispatch and runtime behavior. A static “type,” however, is not a runtime entity but a semantic category: a constraint used by the type checker to classify values according to their conceptual roles. Type aliases, Literal categories, TypeVar constraints, and other markers do not create new runtime structures. They partition the space of values for the purposes of reasoning, documentation, and static analysis. You introduce a new class when you require new runtime behavior; you introduce a new type marker whenever a value's role in the domain warrants distinction, regardless of whether the runtime representation changes.
 
 The divide can be expressed succinctly:
-    Type Class (Runtime Entity): A concrete constructor or primitive—`int`, `str`, `MyClass`—governing behavior at execution. It exists in memory, participates in method dispatch, and is inspected via isinstance().
+*    Type Class (Runtime Entity): A concrete constructor or primitive—`int`, `str`, `MyClass`—governing behavior at execution. It exists in memory, participates in method dispatch, and is inspected via isinstance().
 
-    Type Marker or Constraint (Static Category): An abstract specification—type aliases, Literals, TypeVars, ParamSpecs—that classifies values for static analysis and documents their semantic role. It imposes no runtime structure and exists solely to preserve conceptual distinctions.
+*    Type Marker or Constraint (Static Category): An abstract specification—type aliases, Literals, TypeVars, ParamSpecs—that classifies values for static analysis and documents their semantic role. It imposes no runtime structure and exists solely to preserve conceptual distinctions.
 
 The remainder of this guide focuses on how these static markers operate within Python’s typing system. Throughout, it is essential to remember that Python’s dynamic runtime type is only loosely related to the semantic “type” the static type checker manipulates. In practice, developers use domain-specific type markers as conceptual scaffolding that Python’s runtime does not enforce: they use them to preserve semantic distinctions, to mark transitions between computational states, and to maintain the fidelity of a program’s domain logic over time. This account concerns how typed Python can be used to support such reasoning; it does not claim that these uses exhaust the possibilities of typing, define the aims of formal type theory, or attribute particular intentions to the designers of Python’s typing system.
 
@@ -2305,3 +2305,4 @@ Refers to functions or types that accept a variable number of arguments or param
 ## Variance
 
 Describes how subtyping relationships apply to generic types (e.g., how `list[SubClass]` relates to `list[SuperClass]`). The three kinds of variance are **Invariance**, **Covariance**, and **Contravariance**.
+
