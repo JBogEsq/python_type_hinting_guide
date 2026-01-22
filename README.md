@@ -7,6 +7,9 @@ This repository contains a working draft of a comprehensive guide to modern Pyth
 
 The document is publicly visible to enable review and discussion. It is shared specifically to collect feedback before being stabilized into a more authoritative version.
 
+## Start here
+→ [Read the draft guide](type_hinting_git_v0.1.md)
+
 ---
 
 ## How to Engage
