@@ -91,7 +91,7 @@ The document is **not currently open-licensed**. Redistribution, reuse, or incor
   * [1\. Variable / Attribute Annotation](https://github.com/JBogEsq/python_type_hinting_guide/blob/main/type_hinting_git_v0.1.md#1-variable--attribute-annotation)
   * [2\. Function / Method Annotation](https://github.com/JBogEsq/python_type_hinting_guide/blob/main/type_hinting_git_v0.1.md#2-function--method-annotation)
   * [3\. Generic Type Annotation](https://github.com/JBogEsq/python_type_hinting_guide/blob/main/type_hinting_git_v0.1.md#3-generic-type-annotation)
-  * [4\. [Type Alias Declaration](https://peps.python.org/pep-0695/)](https://github.com/JBogEsq/python_type_hinting_guide/blob/main/type_hinting_git_v0.1.md#4-type-alias-declarationhttpspepspythonorgpep-0695)
+  * [4\. Type Alias Declaration](https://github.com/JBogEsq/python_type_hinting_guide/blob/main/type_hinting_git_v0.1.md#1-variable--attribute-annotation)
   * [5\. Variadic Annotations](https://github.com/JBogEsq/python_type_hinting_guide/blob/main/type_hinting_git_v0.1.md#5-variadic-annotations)
 - [Appendix 3: The Typing Tools Ecosystem](https://github.com/JBogEsq/python_type_hinting_guide/blob/main/type_hinting_git_v0.1.md#appendix-3-the-typing-tools-ecosystem)       
   * [Your IDE: Where Type Checking Happens First](https://github.com/JBogEsq/python_type_hinting_guide/blob/main/type_hinting_git_v0.1.md#your-ide-where-type-checking-happens-first)
